@@ -6,8 +6,8 @@
 
 ## Training Algorithm
 
-<img height="200" src="./imgs/algorithm_1.png"/>
-<img height="200" src="./imgs/algorithm_2.png"/>
+<img height="300" src="./imgs/algorithm_1.png"/>
+<img height="300" src="./imgs/algorithm_2.png"/>
 
 ## Recent Update
 

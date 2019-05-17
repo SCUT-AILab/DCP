@@ -21,6 +21,7 @@ from dcp.utils.write_log import write_log, write_settings
 from dcp.utils import cal_pivot
 from dcp.models.pruned_preresnet import PrunedPreResNet
 from dcp.models.pruned_resnet import PrunedResNet
+from dcp.models.pruned_vgg import PrunedVGGCIFAR
 
 
 class Experiment(object):
@@ -110,6 +111,9 @@ class Experiment(object):
                 self.pruned_model = PrunedPreResNet(depth=self.settings.depth,
                                                     pruning_rate=self.settings.pruning_rate,
                                                     num_classes=self.settings.n_classes)
+            elif self.settings.net_type == "vgg":
+                self.pruned_model = PrunedVGGCIFAR(pruning_rate=self.settings.pruning_rate,
+                                                   num_classes=self.settings.n_classes)
             else:
                 assert False, "use {} data while network is {}".format(self.settings.dataset, self.settings.net_type)
 

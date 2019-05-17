@@ -25,13 +25,7 @@
 
 ## Testing
 
-1. Download the pre-trained pruned model.
-* [resnet-18-pruned0.3 BaiduDrive](https://pan.baidu.com/s/1V-kI0k8KGGEBuC4vukabMA), [resnet-18-pruned0.3 GoogleDrive](https://drive.google.com/open?id=1qWGi8wA60Ism6IhcEHjcYqmWyX5Rg1vK)
-* [resnet-18-pruned0.5 BaiduDrive](https://pan.baidu.com/s/1KsHTmKwljbS-Y9C4iOX37w), [resnet-18-pruned0.5 GoogleDrive](https://drive.google.com/open?id=1cmDdi6y9MCEw3OmbDZpQPsnE0mRQIH8W)
-* [resnet-18-pruned0.7 BaiduDrive](https://pan.baidu.com/s/1BOEfGxeH_9MGS7TT--h8cQ), [resnet-18-pruned0.7 GoogleDrive](https://drive.google.com/open?id=1jEMginHmPjPEJK9TzuGnGPI4NdFKVKJN)
-* [resnet-50-pruned0.3 BaiduDrive](https://pan.baidu.com/s/1u4Vz5910F6ibH_J-wSnfqg), [resnet-50-pruned0.3 GoogleDrive](https://drive.google.com/file/d/185s4qod1ts813rLHwMIciB47KiSTxQrZ/view)
-* [resnet-50-pruned0.5 BaiduDrive](https://pan.baidu.com/s/186x0KWe4jzhBqap7oMqbFA), [resnet-50-pruned0.5 GoogleDrive](https://drive.google.com/file/d/1uv8ACOmFzSDRWpW1T1qu5Psu46MB7WUt/view)
-* [resnet-50-pruned0.7 BaiduDrive](https://pan.baidu.com/s/1-O0xuzDtPK8iZJDBe_m81g), [resnet-50-pruned0.7 GoogleDrive](https://drive.google.com/open?id=1gdS3IfTCWzF8TcVaUcN_M5ENe_AIOYN3)
+1. Download the pre-trained pruned model from the [model zoo](https://github.com/SCUT-AILab/DCP/wiki/Model-Zoo).
 
 2. Add DCP into PYTHONPATH.
 ```Shell

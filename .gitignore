@@ -1,5 +1,5 @@
 .idea/
 *.pyc
 temp/
-*.hocon
+# *.hocon
 *.sh

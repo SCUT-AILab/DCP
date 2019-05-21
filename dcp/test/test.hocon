@@ -1,0 +1,31 @@
+# ------------- general options ----------------------------------------
+save_path = "/home/liujing/NFS/TPAMI_channel_pruning/finetune/resnet/test/" # log path
+data_path = "/home/dataset/" # path for dataset folder, containing cifar10 and imagenet
+dataset = "cifar10"  # options: imagenet | cifar10
+seed = 1  # manually set RNG seed
+gpu = "7"  # GPU id to use, e.g. "0,1,2,3"
+print_frequency = 10
+
+# ------------- data options -------------------------------------------
+n_threads = 4  # number of threads used for data loading
+n_classes = 10  # number of classes in the dataset
+
+# ------------- discrimination-aware options ---------------------------
+pruning_rate = 0.3  # pruning rate
+
+# ------------- common optimization options ----------------------------
+batch_size = 128  # mini-batch size
+momentum = 0.9  # momentum
+weight_decay = 1e-4  # weight decay
+lr = 0.1  # initial learning rate
+n_epochs = 400  # number of total epochs
+step = [160, 240]  # multi-step for linear learning rate
+
+# ------------- model options ------------------------------------------
+net_type = "vgg"  # options: resnet | preresnet
+experiment_id = "evaluation_20190510 "  # experiment identifier
+depth = 19  # resnet depth: (n-2)%6==0
+
+# ------------- resume or pretrained options ------------------------------
+pretrained = "./vgg_pruned0.3.pth"  # path of the pre-trained model
+resume = "" # resume checkpoint

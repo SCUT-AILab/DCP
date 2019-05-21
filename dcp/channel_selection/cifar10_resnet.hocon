@@ -1,0 +1,33 @@
+# ------------- general options ----------------------------------------
+save_path = "/home/liujing/NFS/TPAMI_channel_pruning/channel_selection/test/" # log path
+data_path = "/home/dataset/" # path for dataset folder, containing cifar10 and imagenet
+dataset = "cifar10"  # options: imagenet | cifar10
+seed = 1  # manually set RNG seed
+gpu = "6"  # GPU id to use, e.g. "0,1,2,3"
+
+# ------------- data options -------------------------------------------
+n_threads = 4  # number of threads used for data loading
+n_classes = 10  # number of classes in the dataset
+
+# ------------- discrimination-aware options ---------------------------
+n_losses = 3  # number of additional losses
+pruning_rate = 0.5  # pruning rate
+softmax_weight = 1.0  # weight of the softmax loss
+mse_weight = 1.0  # weight of the mean square loss
+max_samples = -1  # maximum sample size used for channel selection, -1 means using whole data set
+warmstart = True
+
+# ------------- common optimization options ----------------------------
+batch_size = 128  # mini-batch size
+momentum = 0.9  # momentum
+weight_decay = 1e-4  # weight decay
+layer_wise_lr = 0.01  # learning rate for sub problem (8)
+
+# ------------- model options ------------------------------------------
+net_type = "preresnet"  # options: resnet | preresnet
+experiment_id = "20190511"  # experiment identifier
+depth = 56  # resnet depth: (n-2)%6==0
+
+# ------------- resume or pretrained options ------------------------------
+pretrained = "/home/liujing/NFS/TPAMI_channel_pruning/auxnet/cifar10_resnet56/epoch100/preresnet56_cifar10_n3/log_aux_preresnet56_cifar10_bs128_n3_e100_lr0.100_step[40, 60]_20190111/check_point/best_model_with_aux_fc.pth"  # path of the pre-trained model
+resume = "" # resume checkpoint

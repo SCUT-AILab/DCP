@@ -252,7 +252,7 @@ class LayerChannelSelection(object):
         and initialize the pruned_weight w.r.t. the selected channel.
         """
 
-        grad_fnorm.data.mul_(1 - layer.d)
+        grad_fnorm.data.mul_(1 - layer.d).sub_(layer.d)
         _, max_index = torch.topk(grad_fnorm, 1)
         layer.d[max_index] = 1
         # warm-started from the pre-trained model

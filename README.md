@@ -1,5 +1,7 @@
 # Discrimination-aware Channel Pruning for Deep Neural Networks （NeurIPS 2018)
 
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 ## Architecture of Discrimination-aware Channel Pruning (DCP)
 
 ![Architecture of DCP](./imgs/supervised_pruning_framework_v12.png)
